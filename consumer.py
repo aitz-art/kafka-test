@@ -41,7 +41,7 @@ topic="my-topic"
 if __name__ == "__main__":
 
     props = read_ccloud_config("consumer.properties")
-    props["group.id"] = "fulfillment-order-update-event"
+    props["group.id"] = "group-consumer"
     props["auto.offset.reset"] = "earliest"
 
     consumer = Consumer(props)
